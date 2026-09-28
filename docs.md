@@ -12,4 +12,14 @@ The design of the automatic trashcan is straightforward. It contains an ultrason
 - 1 x Arduino UNO R3
 - 1 x Small Breadboard
 
-# Schemmatic
+# Schematic
+![Schematic PDF](trashcan.pdf)
+
+# Wiring
+![image](trashcan.png)
+
+# What worked
+The trashcan accomplishes exactly what it was intended to do - open when someone (or something) is in close proximity and display a fullness status with LEDs
+
+# Future improvements
+Originally, fullness status was meant to be displayed with an LCD display component, by converting distance reported by the ultrasonic sensor to percentage. It is far more intuitive and comfortable than three color LEDs. However, LCD display components require many extra spaces for pin connections, which the Arduino, given the current wiring, lacks. Therefore, an additional Arduino could be attached to the current wiring, resulting in one Arduino responsible for open/close functionality, the other - fullness status, splitting the responsibility equally. On the other hand, adding more components to a single trashcan may be unnecessary and make the trashcan needlessly bulkier and more fragile.
