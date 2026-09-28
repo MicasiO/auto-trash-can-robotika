@@ -1,0 +1,1 @@
+# auto-trash-can-robotika
